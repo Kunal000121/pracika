@@ -42,7 +42,7 @@ export default function PostCard({ post, featured = false }) {
               src={post.featuredImage}
               alt={post.title}
               fill
-              className="object-cover "
+              className="object-cover"
             />
             {post.category.toLowerCase() === "trending" && (
               <div className="absolute top-4 left-4 trending-badge">
@@ -54,40 +54,25 @@ export default function PostCard({ post, featured = false }) {
             )}
           </div>
 
-          <div className="p-8 lg:w-1/2 flex flex-col justify-between">
-            <div>
-              <div className="flex items-center justify-between mb-4">
-                <span
-                  className={`text-xs font-semibold px-3 py-1 rounded-full ${categoryStyle}`}
-                >
-                  {post.category.toUpperCase()}
-                </span>
-                <div className="flex items-center space-x-3 text-sm text-zinc-500 dark:text-zinc-400">
-                  <span>{timeAgo}</span>
-                </div>
-              </div>
-
-              <h2 className="text-2xl lg:text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-4 leading-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                <Link href={`/posts/${post.slug}`}>{post.title}</Link>
-              </h2>
-
-              <p className="text-zinc-600 dark:text-zinc-300 text-lg leading-relaxed mb-6">
-                {post.excerpt}
-              </p>
-            </div>
-
-            <div className="flex items-center justify-end">
-              <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center">
-                  <span className="text-white text-sm font-bold">
-                    {post.author.charAt(0)}
-                  </span>
-                </div>
-                <div className="text-sm text-zinc-700 dark:text-zinc-300 font-medium">
-                  {post.author}
-                </div>
+          <div className="p-8 lg:w-1/2 flex flex-col">
+            <div className="flex items-center justify-between mb-4">
+              <span
+                className={`text-xs font-semibold px-3 py-1 rounded-full ${categoryStyle}`}
+              >
+                {post.category.toUpperCase()}
+              </span>
+              <div className="flex items-center space-x-3 text-sm text-zinc-500 dark:text-zinc-400">
+                <span>{timeAgo}</span>
               </div>
             </div>
+
+            <h2 className="text-2xl lg:text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-4 leading-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+              <Link href={`/posts/${post.slug}`}>{post.title}</Link>
+            </h2>
+
+            <p className="text-zinc-600 dark:text-zinc-300 text-lg leading-relaxed">
+              {post.excerpt}
+            </p>
           </div>
         </div>
       </article>
@@ -105,7 +90,6 @@ export default function PostCard({ post, featured = false }) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
 
-        {/* Quick update badge for recent posts */}
         {timeAgo === "Just now" && (
           <div className="absolute top-3 right-3 quick-update-badge">
             <div className="flex items-center space-x-1">
@@ -132,22 +116,9 @@ export default function PostCard({ post, featured = false }) {
           <Link href={`/posts/${post.slug}`}>{post.title}</Link>
         </h2>
 
-        <p className="text-zinc-600 dark:text-zinc-300 text-sm mb-4 line-clamp-3 leading-relaxed">
+        <p className="text-zinc-600 dark:text-zinc-300 text-sm line-clamp-3 leading-relaxed">
           {post.excerpt}
         </p>
-
-        <div className="flex items-center justify-end">
-          <div className="flex items-center space-x-2">
-            <div className="w-6 h-6 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center">
-              <span className="text-white text-xs font-bold">
-                {post.author.charAt(0)}
-              </span>
-            </div>
-            <div className="text-sm text-zinc-700 dark:text-zinc-300 font-medium">
-              {post.author}
-            </div>
-          </div>
-        </div>
       </div>
     </article>
   );

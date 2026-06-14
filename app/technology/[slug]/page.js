@@ -286,15 +286,6 @@ export default async function NewsPostPage({ params }) {
 
                         <div className="flex items-center justify-between p-3 bg-zinc-50 dark:bg-zinc-700 rounded-lg">
                           <span className="font-medium text-zinc-700 dark:text-zinc-300 text-sm">
-                            Author
-                          </span>
-                          <span className="text-zinc-900 dark:text-zinc-100 font-semibold text-sm">
-                            {post.author}
-                          </span>
-                        </div>
-
-                        <div className="flex items-center justify-between p-3 bg-zinc-50 dark:bg-zinc-700 rounded-lg">
-                          <span className="font-medium text-zinc-700 dark:text-zinc-300 text-sm">
                             Published
                           </span>
                           <span className="text-zinc-900 dark:text-zinc-100 font-semibold text-sm">
