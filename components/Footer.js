@@ -198,6 +198,14 @@ export default function Footer() {
               <span>for staying informed</span>
             </div>
           </div>
+
+          {/* AI Disclaimer — subtle, for legal coverage */}
+          <p className="text-xs text-zinc-400 dark:text-zinc-600 text-center mt-5 leading-relaxed max-w-3xl mx-auto">
+            Content on Pracika is AI-generated and provided for informational
+            and educational purposes only. It does not constitute professional,
+            legal, medical, or financial advice. Pracika is not responsible for
+            any decisions made based on this content.
+          </p>
         </div>
       </div>
     </footer>
