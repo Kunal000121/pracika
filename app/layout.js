@@ -8,11 +8,11 @@ export const metadata = {
     process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
   ),
   title: {
-    default: "Pracika - Trending News and Updates",
-    template: "%s | Pracika",
+    default: "omnicore - Trending News and Updates",
+    template: "%s | omnicore",
   },
   description:
-    "Stay ahead with Pracika - your source for trending topics, quick insights, and breaking news. Get real-time updates on tech, business, lifestyle, and more.",
+    "Stay ahead with omnicore - your source for trending topics, quick insights, and breaking news. Get real-time updates on tech, business, lifestyle, and more.",
   keywords: [
     "trending news",
     "quick updates",
@@ -23,32 +23,32 @@ export const metadata = {
     "breaking news",
     "real-time updates",
   ],
-  authors: [{ name: "Pracika AI Team" }],
-  creator: "Pracika Team",
-  publisher: "Pracika",
+  authors: [{ name: "omnicore AI Team" }],
+  creator: "omnicore Team",
+  publisher: "omnicore",
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "Pracika",
+    siteName: "omnicore",
     url: process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000",
-    title: "Pracika - Trending News and Updates",
+    title: "omnicore - Trending News and Updates",
     description:
-      "Stay ahead with Pracika - your source for trending topics and quick insights.",
+      "Stay ahead with omnicore - your source for trending topics and quick insights.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Pracika News",
+        alt: "omnicore News",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    creator: "@Pracika",
-    title: "Pracika - Trending News and Updates",
+    creator: "@omnicore",
+    title: "omnicore - Trending News and Updates",
     description:
-      "Stay ahead with Pracika - your AI-powered source for trending topics and quick insights.",
+      "Stay ahead with omnicore - your AI-powered source for trending topics and quick insights.",
     images: ["/twitter-image.png"],
   },
   robots: {

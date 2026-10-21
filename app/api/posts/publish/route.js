@@ -129,11 +129,11 @@ export async function POST(request) {
         image: featuredImage,
         author: {
           "@type": "Person",
-          name: author || "Pracika Editorial",
+          name: author || "omnicore Editorial",
         },
         publisher: {
           "@type": "Organization",
-          name: "Pracika",
+          name: "omnicore",
           logo: {
             "@type": "ImageObject",
             url: `${process.env.NEXT_PUBLIC_BASE_URL}/logo.png`,
@@ -159,7 +159,7 @@ export async function POST(request) {
         featuredImage || `https://source.unsplash.com/1200x630/?${category}`,
       cloudinaryPublicId: finalCloudinaryPublicId,
       category: category || "news",
-      author: author || "Pracika Editorial",
+      author: author || "omnicore Editorial",
       published,
       views: 0,
       createdAt: now,

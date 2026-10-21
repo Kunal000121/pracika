@@ -72,7 +72,7 @@ export default function Footer() {
           <div className="lg:col-span-5">
             <Link href="/" className="inline-block group">
               <h3 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent group-hover:from-blue-500 group-hover:to-purple-500 transition-all duration-300 mb-4">
-                Pracika
+                omnicore
               </h3>
             </Link>
             <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6 max-w-md">
@@ -187,7 +187,7 @@ export default function Footer() {
             <p className="text-sm text-zinc-600 dark:text-zinc-400 text-center md:text-left">
               © {currentYear}{" "}
               <span className="font-semibold text-zinc-900 dark:text-zinc-100">
-                Pracika
+                omnicore
               </span>
               . All rights reserved.
             </p>
@@ -201,9 +201,9 @@ export default function Footer() {
 
           {/* AI Disclaimer — subtle, for legal coverage */}
           <p className="text-xs text-zinc-400 dark:text-zinc-600 text-center mt-5 leading-relaxed max-w-3xl mx-auto">
-            Content on Pracika is AI-generated and provided for informational
+            Content on omnicore is AI-generated and provided for informational
             and educational purposes only. It does not constitute professional,
-            legal, medical, or financial advice. Pracika is not responsible for
+            legal, medical, or financial advice. omnicore is not responsible for
             any decisions made based on this content.
           </p>
         </div>

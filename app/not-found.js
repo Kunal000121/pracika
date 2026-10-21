@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Page Not Found - Pracika",
+  title: "Page Not Found - omnicore",
   description: "The page you are looking for could not be found.",
 };
 

@@ -5,7 +5,7 @@ import Breadcrumbs from "../../components/Breadcrumbs";
 
 const categoryMetadata = {
   title: "News",
-  description: "Latest news and current events - Stay updated with Pracika",
+  description: "Latest news and current events - Stay updated with omnicore",
   category: "news",
 };
 
@@ -32,10 +32,10 @@ async function getCategoryPosts(category) {
 
 export async function generateMetadata() {
   return {
-    title: `${categoryMetadata.title} | Pracika`,
+    title: `${categoryMetadata.title} | omnicore`,
     description: categoryMetadata.description,
     openGraph: {
-      title: `${categoryMetadata.title} Articles | Pracika`,
+      title: `${categoryMetadata.title} Articles | omnicore`,
       description: categoryMetadata.description,
       type: "website",
     },

@@ -34,18 +34,18 @@ export async function generateMetadata({ params }) {
   const post = await getPost(params.slug);
   if (!post) {
     return {
-      title: "Post Not Found | Pracika",
+      title: "Post Not Found | omnicore",
       description: "The requested post could not be found.",
     };
   }
-  const baseURL = process.env.NEXT_PUBLIC_BASE_URL || "https://Pracika.com";
+  const baseURL = process.env.NEXT_PUBLIC_BASE_URL || "https://omnicore.com";
   const postURL = `${baseURL}/posts/${post.slug}`;
   return {
-    title: `${post.title} | Pracika`,
+    title: `${post.title} | omnicore`,
     description: post.metaDescription || post.excerpt,
     authors: [{ name: post.author }],
     creator: post.author,
-    publisher: "Pracika",
+    publisher: "omnicore",
     formatDetection: { email: false, address: false, telephone: false },
     metadataBase: new URL(baseURL),
     alternates: { canonical: postURL },
@@ -53,7 +53,7 @@ export async function generateMetadata({ params }) {
       title: post.title,
       description: post.metaDescription || post.excerpt,
       url: postURL,
-      siteName: "Pracika",
+      siteName: "omnicore",
       images: [
         { url: post.featuredImage, width: 1200, height: 630, alt: post.title },
       ],
@@ -68,8 +68,8 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title: post.title,
       description: post.metaDescription || post.excerpt,
-      creator: "@Pracika",
-      site: "@Pracika",
+      creator: "@omnicore",
+      site: "@omnicore",
       images: [{ url: post.featuredImage, alt: post.title }],
     },
     robots: {
@@ -150,7 +150,7 @@ export default async function PostPage({ params }) {
   const post = await getPost(params.slug);
   if (!post) return redirect(`/posts/${params.slug}/not-found`);
 
-  const baseURL = process.env.NEXT_PUBLIC_BASE_URL || "https://Pracika.com";
+  const baseURL = process.env.NEXT_PUBLIC_BASE_URL || "https://omnicore.com";
   const postURL = `${baseURL}/posts/${post.slug}`;
   const categoryMeta = getCategoryMetadata(post.category);
 
@@ -171,7 +171,7 @@ export default async function PostPage({ params }) {
         author: { "@type": "Person", name: post.author },
         publisher: {
           "@type": "Organization",
-          name: "Pracika",
+          name: "omnicore",
           logo: { "@type": "ImageObject", url: `${baseURL}/logo.png` },
         },
         datePublished: post.publishedAt || post.createdAt,
@@ -183,7 +183,7 @@ export default async function PostPage({ params }) {
         inLanguage: "en-US",
         isAccessibleForFree: true,
         copyrightYear: new Date(post.createdAt).getFullYear(),
-        copyrightHolder: { "@type": "Organization", name: "Pracika" },
+        copyrightHolder: { "@type": "Organization", name: "omnicore" },
       },
     ],
   };

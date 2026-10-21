@@ -22,7 +22,7 @@ export default function ShareButtons({ url, title, description }) {
     handleShare("twitter");
     const twitterUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(
       url
-    )}&text=${encodeURIComponent(title)}&via=Pracika`;
+    )}&text=${encodeURIComponent(title)}&via=omnicore`;
     window.open(twitterUrl, "_blank", "width=600,height=400");
   };
 

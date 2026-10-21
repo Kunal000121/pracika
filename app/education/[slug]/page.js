@@ -51,20 +51,20 @@ export async function generateMetadata({ params }) {
 
   if (!post) {
     return {
-      title: "Education Post Not Found | Pracika",
+      title: "Education Post Not Found | omnicore",
       description: "The requested education post could not be found.",
     };
   }
 
-  const baseURL = process.env.NEXT_PUBLIC_BASE_URL || "https://Pracika.com";
+  const baseURL = process.env.NEXT_PUBLIC_BASE_URL || "https://omnicore.com";
   const postURL = `${baseURL}/education/${post.slug}`;
 
   return {
-    title: `${post.title} | Pracika Education`,
+    title: `${post.title} | omnicore Education`,
     description: post.metaDescription || post.excerpt,
     authors: [{ name: post.author }],
     creator: post.author,
-    publisher: "Pracika",
+    publisher: "omnicore",
     formatDetection: {
       email: false,
       address: false,
@@ -78,7 +78,7 @@ export async function generateMetadata({ params }) {
       title: post.title,
       description: post.metaDescription || post.excerpt,
       url: postURL,
-      siteName: "Pracika",
+      siteName: "omnicore",
       images: [
         {
           url: post.featuredImage,
@@ -98,8 +98,8 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title: post.title,
       description: post.metaDescription || post.excerpt,
-      creator: "@Pracika",
-      site: "@Pracika",
+      creator: "@omnicore",
+      site: "@omnicore",
       images: [
         {
           url: post.featuredImage,
@@ -135,7 +135,7 @@ export default async function EducationPostPage({ params }) {
     notFound();
   }
 
-  const baseURL = process.env.NEXT_PUBLIC_BASE_URL || "https://Pracika.com";
+  const baseURL = process.env.NEXT_PUBLIC_BASE_URL || "https://omnicore.com";
   const postURL = `${baseURL}/education/${post.slug}`;
 
   const jsonLd = {
@@ -158,7 +158,7 @@ export default async function EducationPostPage({ params }) {
         },
         publisher: {
           "@type": "Organization",
-          name: "Pracika",
+          name: "omnicore",
           logo: {
             "@type": "ImageObject",
             url: `${baseURL}/logo.png`,
@@ -178,7 +178,7 @@ export default async function EducationPostPage({ params }) {
         copyrightYear: new Date(post.createdAt).getFullYear(),
         copyrightHolder: {
           "@type": "Organization",
-          name: "Pracika",
+          name: "omnicore",
         },
       },
     ],

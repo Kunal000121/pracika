@@ -7,7 +7,7 @@ export default function About() {
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            About Pracika
+            About omnicore
           </h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto">
             Delivering quick, trending insights to keep you informed and ahead
@@ -25,7 +25,7 @@ export default function About() {
           </h2>
           <div className="bg-white dark:bg-zinc-800 rounded-lg shadow-md p-8">
             <p className="text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed mb-4">
-              At Pracika, we believe that staying informed shouldn't be
+              At omnicore, we believe that staying informed shouldn't be
               time-consuming. In today's fast-paced world, you need quick access
               to the most relevant and trending information across various
               topics.
@@ -189,7 +189,7 @@ export default function About() {
             Stay Connected
           </h2>
           <p className="text-zinc-600 dark:text-zinc-300 mb-6">
-            Join thousands of readers who trust Pracika for their daily
+            Join thousands of readers who trust omnicore for their daily
             insights.
           </p>
           <Link

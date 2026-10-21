@@ -9,7 +9,7 @@ export default function SEOHead({
   author,
   publishedTime,
 }) {
-  const siteTitle = "Pracika";
+  const siteTitle = "omnicore";
   const fullTitle = title ? `${title} | ${siteTitle}` : siteTitle;
   const siteUrl = process.env.NEXT_PUBLIC_BASE_URL;
 

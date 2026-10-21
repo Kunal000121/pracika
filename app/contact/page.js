@@ -53,10 +53,10 @@ export default function Contact() {
                     Send us an email and we'll respond within 24 hours.
                   </p>
                   <a
-                    href="mailto:heypracika@gmail.com"
+                    href="mailto:heyomnicore@gmail.com"
                     className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
                   >
-                    heypracika@gmail.com
+                    heyomnicore@gmail.com
                   </a>
                 </div>
               </div>

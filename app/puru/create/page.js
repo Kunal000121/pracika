@@ -148,7 +148,7 @@ export default function CreatePostPage() {
           featuredImage: imageUrl,
           cloudinaryPublicId: publicId,
           category,
-          author: "Pracika Admin",
+          author: "omnicore Admin",
           published: true,
         }),
       });

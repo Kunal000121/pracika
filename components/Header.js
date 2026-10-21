@@ -62,7 +62,7 @@ export default function Header() {
                 <div className="rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 active:scale-95">
                   <Image
                     src="/logo1.png"
-                    alt="Pracika Logo"
+                    alt="omnicore Logo"
                     width={140}
                     height={40}
                     className="object-cover dark:hidden w-[120px] sm:w-[140px] md:w-[160px] h-auto"
@@ -70,7 +70,7 @@ export default function Header() {
                   />
                   <Image
                     src="/logo2.png"
-                    alt="Pracika Logo"
+                    alt="omnicore Logo"
                     width={140}
                     height={40}
                     className="object-cover hidden dark:block w-[120px] sm:w-[140px] md:w-[160px] h-auto"

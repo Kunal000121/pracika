@@ -32,10 +32,10 @@ async function getCategoryPosts(category) {
 
 export async function generateMetadata() {
   return {
-    title: `${categoryMetadata.title} | Pracika`,
+    title: `${categoryMetadata.title} | omnicore`,
     description: categoryMetadata.description,
     openGraph: {
-      title: `${categoryMetadata.title} Articles | Pracika`,
+      title: `${categoryMetadata.title} Articles | omnicore`,
       description: categoryMetadata.description,
       type: "website",
     },
