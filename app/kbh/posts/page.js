@@ -352,7 +352,7 @@ export default function AdminPostsPage() {
               </p>
             </div>
             <Link
-              href="/puru/create"
+              href="/kbh/create"
               className="inline-flex items-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-3 rounded-lg transition-all font-medium shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               <span className="mr-2">✍️</span>
@@ -515,7 +515,7 @@ export default function AdminPostsPage() {
             </p>
             {posts.length === 0 && (
               <Link
-                href="/puru/create"
+                href="/kbh/create"
                 className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium"
               >
                 <span className="mr-2">✍️</span>

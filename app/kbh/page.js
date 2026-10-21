@@ -10,7 +10,7 @@ export default function AdminPage() {
         {/* Quick Actions */}
         <div className="flex flex-col space-y-6">
           <Link
-            href="/puru/create"
+            href="/kbh/create"
             className="bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg shadow-lg p-8 hover:from-blue-700 hover:to-blue-800 transition transform hover:scale-105"
           >
             <div className="flex items-center space-x-4">
@@ -25,7 +25,7 @@ export default function AdminPage() {
           </Link>
 
           <Link
-            href="/puru/posts"
+            href="/kbh/posts"
             className="bg-gradient-to-r from-purple-600 to-purple-700 text-white rounded-lg shadow-lg p-8 hover:from-purple-700 hover:to-purple-800 transition transform hover:scale-105"
           >
             <div className="flex items-center space-x-4">
